@@ -1,65 +1,90 @@
 html{
 height: 100vh;
 width: 100vw;
-border: solid red 2px;
+
 }
 body{
-    height: 11in;
+    height: 11.5in;
     max-width: 8.5in;   
     margin: auto;
     display: grid;
+    padding-top: 20px;
     grid-template-columns: 30% 70%;
     grid-template-rows: 10% 20% 20% 20% 20%;
     column-gap: 10px;
     row-gap: 10px;
     background-image: url(https://mocah.org/thumbnail/49342-Camouflage-HD-Wallpaper.jpg);
-    border: solid green 2px;
+    
+}
+h1,h2{
+    font-size: 18px;
+}
+
+h3,h4{
+    font-size: 22px;
+}
+p{
+    font-size: 12px;
+}
+ul li{
+    font-size: 18px;
 }
 .photo-icon{
-    width: 200px;
+    width: 150px;
     height: 100px;
-    position: relative;
+    position: center;
     border-radius: 20%;
     background-size: 150px;
     background-image: url(https://www.pappaspt.com/wp-content/uploads/2019/08/dwight_IRVFIT.png);
     background-repeat: no-repeat;
 }
 div{
+    padding-top: 20px;
+    padding-right: 0px;
     background-color: bisque;
     border-radius: 5%;
     font-family: Times, Georgia, Garamond, serif;
-    font-size: large;
+    font-size: 22px;
     font-weight: 700;
     text-align: center;
     
-    
-     
+        
 }
-ul{
-    margin: 30px;
+
+* {box-sizing:border-box}
+
+.container {
+  width: 90%; 
+  background-color: rgba(139, 137, 137, 0.685); /* Grey background */
 }
-li{
-    margin: 10px;
-    font-size: medium;
-    font-weight: normal;
-    text-align: left;
+
+.skills {
+  padding-left: 12%;  
+  padding-top: 2px;
+  padding-bottom: 2px; 
+  color: black; 
 }
-#personal-info{
+
+.karate {width: 90%;height: 200%; background-color: #04AA6D;} /* Green */
+.bear {width: 100%; background-color: #2196F3;} /* Blue */
+.immunity {width: 100%; background-color: #f44336;} /* Red */
+.weapons {width: 100%; background-color: #6a1ff5;} /* Dark Grey */
+
+.personal-info{
     grid-column: 1 / 2;
     grid-row: 1 / 3; 
     font-size: medium;
-    
-       
 }
-#education{
+.education{
     grid-column: 1 / 2;
     grid-row: 3 / 4; 
+    padding-left: -40px;
 }
-#skills{
+.skills{
     grid-column: 1 / 2;
     grid-row: 4 / 6; 
 }
-#work-experince{
+.work-experince{
     grid-column: 2 / 3;
     grid-row: 1 / span 5; 
 }
