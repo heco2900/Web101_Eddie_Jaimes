@@ -1,0 +1,152 @@
+body{
+    background-color: aquamarine;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 10% auto 15% 5%;
+    /*row-gap: 30px;
+    /*grid-template-areas:
+    "title title"
+    "photo"
+    "name"*/
+}
+
+.title{
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Smooch', cursive;
+    grid-column: 1 / spand 2;
+    text-align: center;    
+}
+
+
+.photo{
+    background-image: url(myProfilePic.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    border: 3px ridge red;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3 ;
+}
+
+.name{
+    font-family: 'Smooch', cursive;
+    text-align: center;
+    grid-column: 1 /2;
+    grid-row: 3 / 4 ;
+    
+}
+
+.about-me{
+    font-size: 18px;
+    padding: 15px;
+    color: whitesmoke; 
+    font-family: 'Nunito', sans-serif;
+    grid-column: 2 / 3;
+    grid-row: 2 / 4 ;
+    background: inherit;
+    box-shadow: inset 0 0 0 800px rgba(235, 31, 48, 0.548);
+    border-radius: 14px;
+}
+
+/* Style all font icons */
+.fa {
+    padding: 30px;
+    font-size: 80px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    
+  }
+  
+  /* Hover effect */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+
+/*Small devices (phones, 600px and down)*/ 
+@media only screen and (min-width: 600px){
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7% auto auto auto;
+    grid-template-areas: 
+    "title"
+    "photo"
+    "name"
+    "about";
+  }
+    
+.title{
+    grid-area: title;
+
+}
+.container1{
+    padding-left: 80px;
+}    
+.photo{
+
+    grid-area: photo;
+    
+}
+.name{
+    grid-area: name;
+}
+.about-me{
+    grid-area: about;
+}
+}
+
+
+/* Medium and up (Tablets) */
+/*@media (min-width: 768px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 7% auto auto auto;
+        grid-template-areas: 
+        "title"
+        "photo"
+        "name"
+        "about";
+  }
+    
+.title{
+    grid-area: title;
+
+}
+.container1{
+    padding-left: 130px;
+}    
+.photo{
+
+    grid-area: photo;
+    
+}
+.name{
+    grid-area: name;
+}
+.about-me{
+    grid-area: about;
+}
+
+}

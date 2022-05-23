@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <title>Contact Page</title>
+</head>
+<body>
+  <h1>Contact Page</h1>
+
+<div class="container">
+    <form action="result.html" method="GET" enctype="multipart/form-data">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" >
+    </div>
+    
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" >
+    </div>
+    <br>
+    <div>
+      <label for="date">Birthdate</label>
+      <input type="date" name="date" id="date" min="2019-06-10">
+    </div>
+    <div>
+      <br>
+      How did you hear about me?
+      <div>
+        <label for="banana">Classmate</label>
+        <input type="checkbox" name="classmate">
+      </div>
+      <div>
+        <label for="apple">Resume Submission</label>
+        <input type="checkbox" name="resume">
+      </div>
+      <div>
+        <label for="apple">LinkedIn</label>
+        <input type="checkbox" name="linkedin">
+      </div>
+      <div>
+        <label for="apple">Coding Academy Rec</label>
+        <input type="checkbox" name="coding-academy">
+      </div>
+    </div>
+   <br>
+    <div>
+      Would you like to be contacted?
+      <div>
+        <label for="male">Yes</label>
+        <input type="radio" name="gender" id="male" value="male">
+      </div>
+      <div>
+        <label for="female">No</label>
+        <input type="radio" name="gender" id="female" value="female">
+      </div>
+      <br>
+    <div> Comments:
+        <br>
+        <textarea class="comments" placeholder="Write Comment..."></textarea>
+    </div>
+      <br>
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+  </form>
+</div> 
+  <script src="contact.js"></script>
+</body>
+</html> 
